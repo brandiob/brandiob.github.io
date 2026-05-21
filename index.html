@@ -3,69 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brandon Thomas - Portfolio</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #ffffff;
-            color: #333333;
-            margin: 0;
-            padding: 0;
-        }
-
-        .profile-container {
-            text-align: center;
-            margin-top: 10vh;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 5px;
-            color: #000000;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            font-style: italic;
-            color: #666666;
-            margin-bottom: 25px;
-        }
-
-        p {
-            font-size: 1.1rem;
-            color: #333333;
-            max-width: 600px;
-            margin: 0 auto 30px auto;
-            line-height: 1.6;
-        }
-
-        .portfolio-link {
-            display: block;
-            margin: 12px 0;
-            font-size: 1.1rem;
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        .portfolio-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Engineering Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="profile-container">
-        <h1>Brandon Thomas</h1>
-        <div class="subtitle">Electrical Engineering Co-op Student</div>
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Brandon Thomas</h1>
+            <p>Hi there! I love hardware engineering since it feels like magic: letting devices come to life with sensing, thinking and motion.<br><br>
+            Scroll down to see some of my projects.</p>
+        </div>
+    </header>
 
-        <p>Hi there! This website is still under construction. Feel free to use the Github links below to see descriptions and pictures of some of my projects.</p>
+    <main>
+        <div class="project-stripe slate-bg">
+            <section class="project-row">
+                <div class="project-photos">
+                    <div class="photo-grid">
+                        <img src="images/1.jpg" alt="img1">
+                        <img src="images/2.jpg" alt="img2">
+                        <img src="images/3.jpg" alt="img3">
+                        <img src="images/4.jpg" alt="img4">
+                    </div>
+                </div>
+                <div class="project-text">
+                    <h2>Compact BLE Smartwatch</h2>
+                    <p>• A compact smartwatch and docking station in KiCad, integrating an ultra-low-power nRF54L15 BLE SoC (Bluetooth Low Energy System-on-Chip) and NFC tag.<br>
+                    • Developed C/C++ firmware using SPI and I2C communication protocols for low-latency, real-time data acquisition from the LSM6DSV80X 6-axis IMU sensor. <br><br>
+                    <a href="https://github.com/DINDIN2007/Blystwatch" class="project-link">View GitHub →</a></p>
+                </div>
+            </section>
+        </div>
 
-        <a class="portfolio-link" href="https://github.com/uwrealitylabs/HD3SS3220-breakout" target="_blank">USB-3.0 DualBridge, a 4-layer high-speed PCB</a>
-        <a class="portfolio-link" href="https://github.com/DINDIN2007/Blystwatch" target="_blank">Smartwatch prototype board, firmware and enclosure</a>
-        <a class="portfolio-link" href="https://github.com/Ron12777/198" target="_blank">Noise cancelling at a distance device</a>
-        <a class="portfolio-link" href="https://github.com/Byte-Sized-Games/logJam" target="_blank">C++ game made with SQLite and RayLib</a>
-        
-    </div>
+        <div class="project-stripe white-bg">
+            <section class="project-row reverse">
+                <div class="project-photos">
+                    <div class="photo-grid">
+                        <img src="images/5.jpg" alt="img5">
+                        <img src="images/6.jpg" alt="img6">
+                        <img src="images/7.jpg" alt="img7">
+                        <img src="images/8.jpg" alt="img8">
+                    </div>
+                </div>
+                <div class="project-text">
+                    <h2>USB-3.0 Bridging Board</h2>
+                    <p>• A 4-layer PCB bridging USB 3.0 Type-A and Type-C, enabling physical-layer validation of an FPGA platform.<br>
+                    • Engineered high-speed routing in KiCad, integrating an HD3SS3212 multiplexer with strict 90-ohm differential pair impedance matching to ensure signal integrity for Superspeed data lines. <br><br>
+                    <a href="https://github.com/uwrealitylabs/HD3SS3220-breakout" class="project-link">View GitHub →</a></p>
+                </div>
+            </section>
+        </div>
+      
+        <div class="project-stripe slate-bg">
+            <section class="project-row">
+                <div class="project-photos">
+                    <div class="photo-grid">
+                        <img src="images/9.jpg" alt="img9">
+                        <img src="images/10.jpg" alt="img10">
+                        <img src="images/11.jpg" alt="img11">
+                        <img src="images/12.jpg" alt="img12">
+                    </div>
+                </div>
+                <div class="project-text">
+                    <h2>Active Noise Cancellation Device</h2>
+                    <p>• Developed a real-time feedforward ANC system deploying headless to a Raspberry Pi 4 to execute FxNLMS adaptive algorithms at 48 kHz.<br>
+                    • Designed full-system block diagrams and technical presentations to communicate hardware I/O architecture constraints. <br><br>
+                    <a href="https://github.com/Ron12777/198" class="project-link">View GitHub →</a></p>
+                </div>
+            </section>
+        </div>
+
+        <div class="project-stripe white-bg">
+            <section class="project-row reverse">
+                <div class="project-photos">
+                    </div>
+                <div class="project-text contact-block">
+                    <h2>Let's get in touch</h2>
+                    <p>Email: <a href="mailto:brandolthomas@icloud.com">brandolthomas@icloud.com</a></p>
+                    <p><a href="https://github.com/brandiob">GitHub: brandiob</a></p>
+                    <p><a href="https://www.linkedin.com/in/brandon-thomas-4a513b383/">LinkedIn</a></p>
+                </div>
+            </section>
+        </div>
+    </main>
 
 </body>
 </html>
